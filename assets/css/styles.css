@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'helvetica neue', helvetica, arial, sans-serif;
+}
+
+thead th,
+tfoot th {
+    font-family: 'Rock Salt', cursive;
+}
+
+th {
+    letter-spacing: 2px;
+}
+
+td {
+    letter-spacing: 1px;
+}
+
+tbody td {
+    text-align: center;
+}
+
+tfoot th {
+    text-align: right;
+}
+
+.container {
+    margin: 50px 100px 50px 100px;
+    width: 90%;
+    display: flex;
+}
+
+.form {
+    width: 40%;
+}
+
+.table {
+    width: 50%;
+    margin-left: 20px;
+}
+
+label{
+    font-size: 120%;
+}
+
+input {
+    width: 250px;
+    padding: 7px;
+    border-radius: 4px;
+    font-size: 115%;
+}
+
+button {
+    padding: 5px 10px 5px 10px;
+}
+
+textarea {
+    resize: none;
+    width: 250px;
+    height: 70px;
+    padding: 7px;
+    font-size: 145%;
+}
+
+.input {
+    margin-bottom: 20px;
+}
+
+table,
+td {
+    border: 1px solid;
+}
+
+td,
+th {
+    padding: 5px 15px 5px 15px;
+}
+
+.buttons{
+    border: none; 
+    padding: 5px 10px 5px 10px;
+
+}
+
+.warning{
+    color: rgb(167, 0, 0);
+    font-size: 110%;
+    font-weight: bold;
+}
+
+.warn-edit{
+    color: rgb(5, 5, 150);
+    font-size: 130%;
+    font-weight: bold;
+}
+
+.item{
+    border-radius: 7px;
+}

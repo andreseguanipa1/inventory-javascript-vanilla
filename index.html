@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Iventory System</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="form">
+
+            <div id="editable">
+            </div>
+
+            <div class="input">
+                <label for="">Codigo</label><br /><br />
+                <input onkeypress='return validaNumericos(event)' type="text" id="code" placeholder="Ingresa el Codigo">
+            </div>
+
+            <div class="input">
+                <label for="">Descripcion</label><br /><br />
+                <textarea name="" id="description" placeholder="Describe el producto"></textarea>
+            </div>
+
+            <div class="input">
+                <label for="">Cantidad</label><br /><br />
+                <input onkeypress='return validaNumericos(event)' type="text" id="quantity"
+                    placeholder="Ingresa la Cantidad">
+            </div>
+
+            <div class="input">
+                <label for="">Precio</label><br /><br />
+                <input onkeypress='return validaDecimal(event)' type="text" id="price" placeholder="Ingresa el Precio">
+                $
+            </div>
+
+            <div id="warn-div">
+            </div>
+
+            <button onclick="insert(true)">Insertar</button>
+        </div>
+
+        <div class="table">
+
+            <table id="content">
+                <tr>
+                    <th>Codigo</th>
+                    <th>Descripcion</th>
+                    <th>Cantidad</th>
+                    <th>Precio ($)</th>
+                </tr>
+            </table>
+
+            <br />
+
+            <p>Total de productos: <b id="productsAll"></b></p><br />
+            <p>Valor del inventario: <b id="inventoryPrice"></b></p><br />
+            <p>Cantidad de productos: <b id="productsQuantity"></b></p><br />
+
+
+        </div>
+
+    </div>
+
+    <script src="./assets/js/scripts.js"></script>
+
+</body>
+
+</html>
